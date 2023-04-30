@@ -19,21 +19,21 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
-              src="assets/profile-image.png"
+              className="hover:filter rounded-t-full hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
+              src="assets/profile-image.jpg"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[400px]"
-            src="assets/profile-image.png"
+            className="z-10 w-full max-w-[400px] md:max-w-[400px] "
+            src="assets/profile-image.jpg"
           />
         )}
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-12">
+      <div className="z-30 basis-2/5 mt-12 md:mt-28">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"

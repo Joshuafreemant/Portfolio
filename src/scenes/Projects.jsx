@@ -21,7 +21,7 @@ const Project = ({ title, description, tools, github, link, img }) => {
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative">
+    <motion.div variants={projectVariant} className="relative h-[400px] overflow-hidden">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7 font-semibold text-sm">
@@ -52,7 +52,7 @@ const Projects = () => {
   const toolRoadlers = ["ReactJs", "Redux", "TailwindCSS", "JavaScript", "RestAPI"]
   const toolLax = ["ReactNative", "Redux", "NativeWind", "Firebase"]
   const toolUber = ["ReactNative", "Redux", "NativeWind", "Map"]
-  const toolHey = ["ReactNative", "Redux", "NativeWind", "SanityCMS", "GROQ", "Map"]
+  const toolHey = ["ReactNative", "Redux", "NativeWind", "SanityCMS", "Map"]
   const toolBreedss = ["ReactJs", "Redux", "NativeWind", "NodeJs", "MongoDB"]
   const toolGym = ["ReactJs", "RapidApi", "YouTubeApi"]
 
@@ -86,7 +86,7 @@ const Projects = () => {
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid sm:grid-cols-3 gap-4"
           variants={container}
           initial="hidden"
           whileInView="visible"
@@ -100,20 +100,9 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
           <Project
-            // title="qraimo" 
-            title="project-1"
-            link="https://sanityshop.vercel.app/"
-            img="../assets/profile-image.jpg"
-
-            github="https://github.com/Joshuafreemant/sanityshop"
-            description="
-            This E-Commerce App enables users to shop with ease, powered by Stripe for secure payments and SanityCMS for a customizable and reliable backend."
-            tools={toolQraimo}
-          />
-          <Project
             title="Roadlers"
             link="https://roadlers.com/"
-            img="../assets/profile-image.jpg"
+            img="../assets/roadlers.png"
 
             github="https://github.com/Joshuafreemant/Roadler_file"
             description="
@@ -121,15 +110,23 @@ const Projects = () => {
             "
             tools={toolRoadlers}
           />
+          <Project
+            title="Qraimo"
+            link="https://sanityshop.vercel.app/"
+            img="../assets/qraimo.png"
+
+            github="https://github.com/Joshuafreemant/sanityshop"
+            description="
+            This E-Commerce App enables users to shop with ease, powered by Stripe for secure payments and SanityCMS for a customizable and reliable backend."
+            tools={toolQraimo}
+          />
+
 
           {/* ROW 2 */}
           <Project
-            // title="Lax Laundry"
-            title="project-4"
-
+            title="Lax Laundry"
             link=""
-            img="../assets/profile-image.jpg"
-
+            img="../assets/lax.jpg"
             github=""
             description="Lax laundry app streamlines your laundry tasks by letting you easily schedule pick-ups, track orders, and make payments."
             tools={toolLax}
@@ -137,8 +134,7 @@ const Projects = () => {
           <Project
             title="Uber Clone"
             link=""
-            img="../assets/profile-image.jpg"
-
+            img="../assets/uber.jpg"
             github=""
             description="
             This Uber clone mobile app offers a seamless ride-sharing experience, complete with real-time tracking, distance Matrix Calculation, etc, all designed to enhance user satisfaction.
@@ -149,7 +145,7 @@ const Projects = () => {
           <Project
             title="Glovo Eat"
             link="http://exp.host/@joshuafreeman/Glovo-clone?release-channel=default"
-            img="../assets/profile-image.jpg"
+            img="../assets/glovo.jpg"
 
             github=""
             description="
@@ -163,7 +159,7 @@ const Projects = () => {
           <Project
             title="Breedss"
             link="https://breedss.onrender.com"
-            img="../assets/profile-image.jpg"
+            img="../assets/breedss.png"
 
             github="https://github.com/Joshuafreemant/breedss-frontend"
             description="
@@ -174,7 +170,7 @@ const Projects = () => {
           <Project
             title="Project 7"
             link="https://gymfit.vercel.app/"
-            img="../assets/profile-image.jpg"
+            img="../assets/fitness.png"
 
             github="https://github.com/Joshuafreemant/gymfit"
             description="
