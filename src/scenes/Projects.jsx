@@ -48,16 +48,16 @@ const Project = ({ title, description, tools, github, link, img }) => {
 
 const Projects = () => {
 
-  const toolQraimo = ["NextJs", "Stripe", "TailwindCSS", "SanityCMS", "RapidAPI", "GROQ"]
-  const toolRoadlers = ["ReactJs", "Redux", "TailwindCSS", "JavaScript", "RestAPI"]
-  const toolLax = ["ReactNative", "Redux", "NativeWind", "Firebase"]
-  const toolUber = ["ReactNative", "Redux", "NativeWind", "Map"]
-  const toolHey = ["ReactNative", "Redux", "NativeWind", "SanityCMS", "Map"]
-  const toolBreedss = ["ReactJs", "Redux", "NativeWind", "NodeJs", "MongoDB"]
+  const toolQraimo = ["NextJs", "Stripe", "SanityCMS", "RapidAPI", "GROQ"]
+  const toolRoadlers = ["ReactJs", "Redux", "JavaScript", "RestAPI"]
+  const toolLax = ["ReactNative", "Redux", "Firebase"]
+  const toolUber = ["ReactNative", "Redux", "Map"]
+  const toolHey = ["ReactNative", "Redux", "SanityCMS", "Map"]
+  const toolBreedss = ["ReactJs", "Redux", "NodeJs", "MongoDB"]
   const toolGym = ["ReactJs", "RapidApi", "YouTubeApi"]
 
   return (
-    <section id="projects" className="pt-[400px] pb-48">
+    <section id="projects" className="pt-[80px] md:pt-[400px] pb-48">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
