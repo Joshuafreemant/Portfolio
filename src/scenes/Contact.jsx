@@ -75,41 +75,41 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-transparent border border-gray-50  text-white font-semibold  p-3"
               type="text"
-              placeholder="NAME"
+              placeholder="Name"
               {...register("name", {
                 required: true,
                 maxLength: 100,
               })}
             />
             {errors.name && (
-              <p className="text-red mt-1">
+              <p className="text-yellow mt-1">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "maxLength" && "Max length is 100 char."}
               </p>
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-transparent border border-gray-50  text-white font-semibold  p-3"
               type="text"
-              placeholder="EMAIL"
+              placeholder="Email Address"
               {...register("email", {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               })}
             />
             {errors.email && (
-              <p className="text-red mt-1">
+              <p className="text-yellow mt-1">
                 {errors.email.type === "required" && "This field is required."}
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-transparent border border-gray-50  text-white font-semibold  p-3"
               name="message"
-              placeholder="MESSAGE"
+              placeholder="Message"
               rows="4"
               cols="50"
               {...register("message", {
@@ -118,7 +118,7 @@ const Contact = () => {
               })}
             />
             {errors.message && (
-              <p className="text-red mt-1">
+              <p className="text-yellow mt-1">
                 {errors.message.type === "required" &&
                   "This field is required."}
                 {errors.message.type === "maxLength" &&
@@ -127,7 +127,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-gray-600 hover:text-white transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE

@@ -20,12 +20,15 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+            MY <span className="text-yellow">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+            As a software developer with expertise in
+            <strong className="text-yellow"> JavaScript, CSS,
+              Tailwind, ReactJS, NextJS, React Native, TypeScript, NodeJS, ExpressJs, MongoDB and MySQL, </strong>
+            I have the skills and experience necessary to create high-quality web and mobile applications that are performant, scalable, and intuitive.
+
           </p>
         </motion.div>
 
@@ -71,9 +74,14 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+
+          
+
+          I'm a software developer with 3+ years of experience in programming languages and frameworks such as 
+          JavaScript, TypeScript, ReactJS, and NodeJS. I excel in software development best practices, project 
+          management, and collaboration with cross-functional teams. With expertise in databases like MySQL and MongoDB, 
+          and cloud platforms such as AWS and Heroku, 
+          I'm dedicated to building intuitive, scalable, and performant software solutions that meet your needs.
           </p>
         </motion.div>
 
@@ -99,10 +107,10 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+          As an innovative software developer, I'm constantly seeking new and better ways to develop software applications. 
+          I utilize the latest technologies and apply forward-thinking solutions to create products that are user-friendly, 
+          efficient, and scalable. With my innovative approach, 
+          I can help deliver software solutions that exceed expectations and set your business apart from the competition.
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -127,10 +135,10 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+          As an imaginative software developer, I approach each project with a unique perspective and fresh ideas. 
+          I use my creativity to find innovative solutions to complex problems and develop software applications 
+          that exceed expectations. 
+          With my out-of-the-box thinking, I can help bring your ideas to life in exciting and innovative ways
           </p>
         </motion.div>
       </div>
