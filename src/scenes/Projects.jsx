@@ -158,7 +158,7 @@ const Projects = () => {
           {/* ROW 3 */}
           <Project
             title="Breedss"
-            link="https://breedss.onrender.com"
+            link="https://breeds.onrender.com"
             img="../assets/breedss.png"
 
             github="https://github.com/Joshuafreemant/breedss-frontend"
