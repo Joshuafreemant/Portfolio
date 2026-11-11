@@ -103,6 +103,7 @@ Letter-spacing: headings `-0.01em` (slightly tight), mono labels `+0.04em` to `+
 ## 4. Iconography
 
 - **Library: Lucide (`lucide-react`)** exclusively. Do not mix in Heroicons, Font Awesome, or emoji as functional icons.
+  - Exception: brand marks (GitHub, LinkedIn logos) aren't in `lucide-react` — use the inline SVGs in `src/components/brand-icons.tsx`, sized and weighted to match Lucide's visual footprint. This is the only sanctioned exception.
 - Stroke width: `1.5` (Lucide default) everywhere — never mix stroke weights.
 - Size: `16px` inline with text/labels, `20px` in nav/buttons, `24px` for standalone section markers.
 - Icons are always paired with a text label in navigation and buttons — never icon-only except the theme toggle and social links (which get `aria-label` + tooltip).
