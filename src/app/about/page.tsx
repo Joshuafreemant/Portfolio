@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Section } from "@/components/section";
 import { Badge } from "@/components/ui";
 import { profile } from "@/content/profile";
@@ -13,6 +14,7 @@ export default function AboutPage() {
   return (
     <div className="pt-12">
       <Section eyebrow="About" title="How I work">
+        <div className="flex flex-col-reverse gap-8 md:flex-row">
         <div className="max-w-[720px] space-y-5 text-[var(--text-secondary)]">
           <p>{profile.summary}</p>
           <p>
@@ -36,6 +38,18 @@ export default function AboutPage() {
             was never the hard part; owning a system from a blank repo through to real users in
             production is.
           </p>
+        </div>
+          <div className="flex-shrink-0">
+            <div className="h-28 w-28 overflow-hidden rounded-[14px] border border-[var(--border)] shadow-[0_0_0_1px_var(--accent),0_0_28px_var(--accent-glow)] md:h-32 md:w-32">
+              <Image
+                src="/avatar.jpg"
+                alt={profile.name}
+                width={256}
+                height={256}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
         </div>
 
         <h3 className="mono-label mt-12 text-xs uppercase text-[var(--text-muted)]">Focus areas</h3>
