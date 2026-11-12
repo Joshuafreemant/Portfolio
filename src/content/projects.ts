@@ -53,10 +53,11 @@ export const projects: Project[] = [
     slug: "schoolexl",
     name: "SchoolExl",
     description:
-      "Education platform. Led the backend team, building and maintaining the Laravel and SQL backend while a contractor at Age of AI.",
+      "Education platform (schoolexl.in, learn.schoolexl.in). Led the backend team, building and maintaining the Laravel and SQL backend while a contractor at Age of AI.",
     role: "Backend Team Lead",
     stack: ["Laravel", "PHP", "SQL"],
     featured: false,
+    url: "https://schoolexl.in",
   },
   {
     slug: "roadlers",
