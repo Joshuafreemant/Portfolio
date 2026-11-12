@@ -80,7 +80,8 @@ Light mode is NOT an inversion — it is designed intentionally with a cooler, p
 
 ## 3. Typography
 
-- **Display/UI sans:** `Space Grotesk` (via `next/font/google`, fallback `Inter`) — headings, nav, body copy. A more stylistic, geometric sans chosen deliberately over a default system font to give the site a distinct identity.
+- **Headings (h1–h4):** `Fraunces` (via `next/font/google`, weights 400/500/600, normal + italic, fallback `Georgia, "Times New Roman", serif`) — an editorial serif applied globally to every heading tag via a CSS selector (`h1,h2,h3,h4 { font-family: var(--font-serif-heading); }`), not per-component. Gives the site a more stylistic, less purely-technical identity than an all-sans system. Use `<em>` for a single emphasized word within a heading where it adds character (e.g. a name, a key phrase) — styled italic, often in `--accent`. Don't overuse the italic emphasis; one per heading at most, and not on every heading.
+- **Body/UI sans:** `Space Grotesk` (via `next/font/google`, fallback `Inter`) — body copy, nav, buttons, non-heading UI text.
 - **Monospace:** `JetBrains Mono` (via `next/font/google`, fallback `ui-monospace`) — labels, tags, dates, stack chips, code, the hero kicker line, section numbers (`01 /`, `02 /`).
 - Fallback stack: `font-family: var(--font-sans), -apple-system, "Segoe UI", sans-serif;` and `var(--font-mono), ui-monospace, "SFMono-Regular", monospace;`
 

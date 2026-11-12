@@ -19,8 +19,8 @@ export default function Home() {
             <p className="mono-label text-xs uppercase tracking-widest text-[var(--text-muted)]">
               {profile.tagline}
             </p>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[var(--text-primary)] md:text-6xl">
-              {profile.name}
+            <h1 className="mt-4 text-4xl font-medium tracking-tight text-[var(--text-primary)] md:text-6xl">
+              Tolulope <em className="text-[var(--accent)]">Joshua</em> Akinniyi
             </h1>
             <p className="mt-6 max-w-2xl text-base text-[var(--text-secondary)] md:text-lg">
               {profile.summary}

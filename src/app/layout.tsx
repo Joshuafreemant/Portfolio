@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, JetBrains_Mono, Fraunces } from "next/font/google";
 import { cookies } from "next/headers";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -10,6 +10,13 @@ const displaySans = Space_Grotesk({
   variable: "--font-display-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+});
+
+const heading = Fraunces({
+  variable: "--font-heading",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
 });
 
 const mono = JetBrains_Mono({
@@ -38,7 +45,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       data-theme={theme}
-      className={`${displaySans.variable} ${mono.variable} h-full antialiased`}
+      className={`${displaySans.variable} ${mono.variable} ${heading.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider initialTheme={theme}>

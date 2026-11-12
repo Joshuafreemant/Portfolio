@@ -62,6 +62,7 @@
   --color-warning: var(--warning);
   --font-sans: var(--font-display-sans);
   --font-mono: var(--font-jetbrains-mono);
+  --font-serif-heading: var(--font-heading);
 }
 
 * {
@@ -87,6 +88,18 @@ body {
 .mono-label {
   font-family: var(--font-mono), ui-monospace, "SFMono-Regular", monospace;
   letter-spacing: 0.06em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif-heading), Georgia, "Times New Roman", serif;
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
 }
 
 @media (prefers-reduced-motion: reduce) {
