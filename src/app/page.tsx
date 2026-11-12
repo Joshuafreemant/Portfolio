@@ -41,7 +41,7 @@ export default function Home() {
           <div className="flex-shrink-0">
             <div className="h-36 w-36 overflow-hidden rounded-[14px] border border-[var(--border)] shadow-[0_0_0_1px_var(--accent),0_0_32px_var(--accent-glow)] md:h-48 md:w-48">
               <Image
-                src="/avatar.jpg"
+                src="/avatar.png"
                 alt={profile.name}
                 width={384}
                 height={384}

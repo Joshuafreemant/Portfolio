@@ -42,7 +42,7 @@ export default function AboutPage() {
           <div className="flex-shrink-0">
             <div className="h-28 w-28 overflow-hidden rounded-[14px] border border-[var(--border)] shadow-[0_0_0_1px_var(--accent),0_0_28px_var(--accent-glow)] md:h-32 md:w-32">
               <Image
-                src="/avatar.jpg"
+                src="/avatar.png"
                 alt={profile.name}
                 width={256}
                 height={256}
