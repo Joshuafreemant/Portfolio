@@ -17,8 +17,9 @@ export const experience: ExperienceEntry[] = [
     location: "Lagos, Nigeria",
     current: true,
     summary:
-      "Building the backend for a Nigerian tax-compliance and payments platform, including a FIRS e-invoicing pipeline and a network of financial service integrations.",
+      "Building the backend for a Nigerian tax-compliance and payments platform handling 10,000+ concurrent transactions daily, including a FIRS e-invoicing pipeline and a network of financial service integrations.",
     highlights: [
+      "Built and maintain backend infrastructure that reliably handles more than 10,000 concurrent transactions daily across integrated payment, tax-filing and investment providers.",
       "Designed and developed an FIRS e-invoicing pipeline connecting Zoho Books and QuickBooks — normalising invoice data, mapping it to the required FIRS structure, validating records, and supporting transmission and incremental synchronisation.",
       "Integrated payment and investment services including Nomba, Monnify, Remita, Cowrywise and Penpay/Pencco — service workflows, webhook handling and transaction reconciliation.",
       "Implemented Cowrywise investment workflows covering account registration, KYC, flexible and locked savings, mutual funds and withdrawals.",
@@ -75,10 +76,11 @@ export const experience: ExperienceEntry[] = [
     location: "Remote · California, USA",
     current: false,
     summary:
-      "Led the backend team on SchoolExl, an education platform, owning the Laravel/SQL backend while developing server-side functionality and improving reliability and performance.",
+      "Led the backend team on SchoolExl, an AI-powered education platform out of India with an offline AI tablet and AI-graded assessments, owning the Laravel/SQL backend underneath the product's AI/ML features.",
     highlights: [
       "Led the backend team for SchoolExl, building and maintaining the Laravel and SQL backend.",
       "Developed server-side functionality, optimised database queries and caching, and implemented fixes and security patches to improve application reliability and performance.",
+      "SchoolExl has since picked up press coverage in India (The Interview World, Nov 2025) and partnerships including IIT Madras and the Government of Jamaica.",
     ],
     stack: ["Laravel", "PHP", "SQL", "Caching"],
   },

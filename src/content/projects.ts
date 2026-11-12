@@ -33,7 +33,7 @@ export const projects: Project[] = [
     slug: "tpay",
     name: "TPay",
     description:
-      "Tax-compliance and payments platform. Built the FIRS e-invoicing pipeline and integrated Nigerian payment and investment providers.",
+      "Tax-compliance and payments platform handling 10,000+ concurrent transactions daily. Built the FIRS e-invoicing pipeline and integrated Nigerian payment and investment providers.",
     role: "Backend Engineer",
     stack: ["Node.js", "TypeScript", "OAuth 2.0", "Webhooks"],
     featured: true,
@@ -53,10 +53,10 @@ export const projects: Project[] = [
     slug: "schoolexl",
     name: "SchoolExl",
     description:
-      "Education platform (schoolexl.in, learn.schoolexl.in). Led the backend team, building and maintaining the Laravel and SQL backend while a contractor at Age of AI.",
+      "An AI-powered education platform out of India — an \"AI operating system\" for schools, with AI-graded assessments (98%+ accuracy) and an offline AI tablet running a proprietary small language model trained on Indian curriculum. Picked up press coverage, a pilot with India's Retailers Skill Council, an MoU with Jamaica's government, and a collaboration with IIT Madras. I led the backend team (Laravel/SQL) for about four months — the AI/ML side was the core product team's work.",
     role: "Backend Team Lead",
     stack: ["Laravel", "PHP", "SQL"],
-    featured: false,
+    featured: true,
     url: "https://schoolexl.in",
   },
   {
