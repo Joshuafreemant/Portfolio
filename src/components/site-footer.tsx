@@ -27,7 +27,7 @@ export function SiteFooter() {
             <GithubIcon size={18} />
           </a>
           <a
-            href="#"
+            href={profile.linkedin}
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"

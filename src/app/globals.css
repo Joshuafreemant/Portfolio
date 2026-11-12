@@ -60,8 +60,8 @@
   --color-accent-dim: var(--accent-dim);
   --color-danger: var(--danger);
   --color-warning: var(--warning);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-display-sans);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 * {

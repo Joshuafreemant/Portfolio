@@ -80,8 +80,8 @@ Light mode is NOT an inversion — it is designed intentionally with a cooler, p
 
 ## 3. Typography
 
-- **Display/UI sans:** `Geist Sans` (via `next/font/google` fallback to `Inter`) — headings, nav, body copy.
-- **Monospace:** `Geist Mono` (fallback `JetBrains Mono`) — labels, tags, dates, stack chips, code, the hero kicker line, section numbers (`01 /`, `02 /`).
+- **Display/UI sans:** `Space Grotesk` (via `next/font/google`, fallback `Inter`) — headings, nav, body copy. A more stylistic, geometric sans chosen deliberately over a default system font to give the site a distinct identity.
+- **Monospace:** `JetBrains Mono` (via `next/font/google`, fallback `ui-monospace`) — labels, tags, dates, stack chips, code, the hero kicker line, section numbers (`01 /`, `02 /`).
 - Fallback stack: `font-family: var(--font-sans), -apple-system, "Segoe UI", sans-serif;` and `var(--font-mono), ui-monospace, "SFMono-Regular", monospace;`
 
 ### Scale (rem, 1rem = 16px)

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight, Download, ExternalLink, MapPin } from "lucide-react";
 import { Section } from "@/components/section";
 import { Badge, Card, PrimaryButton, SecondaryButton } from "@/components/ui";
@@ -13,27 +14,41 @@ export default function Home() {
   return (
     <>
       <section className="py-20 md:py-32">
-        <div className="mx-auto max-w-[1120px] px-6">
-          <p className="mono-label text-xs uppercase tracking-widest text-[var(--text-muted)]">
-            {profile.tagline}
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[var(--text-primary)] md:text-6xl">
-            {profile.name}
-          </h1>
-          <p className="mt-6 max-w-2xl text-base text-[var(--text-secondary)] md:text-lg">
-            {profile.summary}
-          </p>
-          <div className="mono-label mt-6 flex items-center gap-2 text-xs text-[var(--text-muted)]">
-            <MapPin size={14} strokeWidth={1.5} />
-            {profile.location} · {profile.availability}
+        <div className="mx-auto flex max-w-[1120px] flex-col-reverse items-start gap-10 px-6 md:flex-row md:items-center md:justify-between md:gap-16">
+          <div className="min-w-0 flex-1">
+            <p className="mono-label text-xs uppercase tracking-widest text-[var(--text-muted)]">
+              {profile.tagline}
+            </p>
+            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[var(--text-primary)] md:text-6xl">
+              {profile.name}
+            </h1>
+            <p className="mt-6 max-w-2xl text-base text-[var(--text-secondary)] md:text-lg">
+              {profile.summary}
+            </p>
+            <div className="mono-label mt-6 flex items-center gap-2 text-xs text-[var(--text-muted)]">
+              <MapPin size={14} strokeWidth={1.5} />
+              {profile.location} · {profile.availability}
+            </div>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <PrimaryButton href="/work" icon={ArrowRight}>
+                View work
+              </PrimaryButton>
+              <SecondaryButton href="/resume.pdf" icon={Download}>
+                Resume
+              </SecondaryButton>
+            </div>
           </div>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <PrimaryButton href="/work" icon={ArrowRight}>
-              View work
-            </PrimaryButton>
-            <SecondaryButton href="/resume.pdf" icon={Download}>
-              Resume
-            </SecondaryButton>
+          <div className="flex-shrink-0">
+            <div className="h-36 w-36 overflow-hidden rounded-[14px] border border-[var(--border)] shadow-[0_0_0_1px_var(--accent),0_0_32px_var(--accent-glow)] md:h-48 md:w-48">
+              <Image
+                src="/avatar.jpg"
+                alt={profile.name}
+                width={384}
+                height={384}
+                priority
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
